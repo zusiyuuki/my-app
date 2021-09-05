@@ -4,12 +4,14 @@ import { ProductListComponent } from './product-listings/product-listings.compon
 import { RouterModule, Routes } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { ProductComponent } from './product.component';
+
+
 const routes: Routes = [
   {
     path:'products',component:ProductComponent,
     children:[
       {path:'',component:ProductListComponent},
-    {path:':productId',component:ProductDetailComponent}
+      {path:':productId',component:ProductDetailComponent}
 
     ]
 

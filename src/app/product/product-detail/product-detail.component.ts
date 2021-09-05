@@ -9,7 +9,7 @@ import { products} from '../../products';
 })
 export class ProductDetailComponent implements OnInit {
 
-  product: any;
+  product: any
 
   constructor(private route: ActivatedRoute) { }
 
