@@ -8,7 +8,7 @@ import { products} from '../../products';
 })
 export class ProductListComponent implements OnInit {
 
-  Products:any
+  Products:any;
 
   constructor() { }
 

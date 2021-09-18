@@ -9,13 +9,17 @@ import { products} from '../../products';
 })
 export class ProductDetailComponent implements OnInit {
 
-  product: any
+  product:any;
 
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit(){
     this.route.paramMap.subscribe(params=>{
       this.product = products[+params.get("productId")!]
+      debugger
+      console.log("productの値は：")
+
+      console.log(this.product)
     })
   }
 
